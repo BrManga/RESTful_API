@@ -6,9 +6,7 @@ const bodyParser = require("body-parser");
 const productRoutes = require("./api/routes/products");
 const orderRoutes = require("./api/routes/orders");
 mongoose.connect(
-  "mongodb+srv://Bora_Manga:" +
-    process.env.MONGO_ATLAS_PW +
-    "@cluster0-linf1.mongodb.net/sample_airbnb?retryWrites=true&w=majority",
+  "mongodb+srv://Bora_Manga:Et2332.5@cluster0-linf1.mongodb.net/sample_airbnb?retryWrites=true&w=majority",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true
