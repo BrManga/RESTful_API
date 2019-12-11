@@ -8,8 +8,11 @@ const orderRoutes = require("./api/routes/orders");
 mongoose.connect(
   "mongodb+srv://Bora_Manga:" +
     process.env.MONGO_ATLAS_PW +
-    "@cluster0-linf1.mongodb.net/test?retryWrites=true&w=majority",
-  { useNewUrlParser: true, useUnifiedTopology: true }
+    "@cluster0-linf1.mongodb.net/sample_airbnb?retryWrites=true&w=majority",
+  {
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+  }
 );
 //MIDDLEWARES
 app.use(morgan("dev"));
